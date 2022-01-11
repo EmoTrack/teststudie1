@@ -22,7 +22,7 @@ let x= 42;
 
 function install() {
 let first = localStorage.getItem('first');
-if (first == 123){
+if (first != 123){
 x=666;
 document.getElementById("ios-prompt").style.display = "block";
     }
