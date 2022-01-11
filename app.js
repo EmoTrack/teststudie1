@@ -26,8 +26,8 @@ function refer() {
 let params1 = new URLSearchParams(document.location.search.substring(1));
 value = parseInt(params1.get("s"), 10);
 console.log(value);
-localStorage.setItem('serial', value);
 if(!isNaN(value)){
+localStorage.setItem('serial', value);
 document.getElementById("eingabefeld").style.display = "none";
 let check_link1 = link+value;
 window.location.href = check_link1;
