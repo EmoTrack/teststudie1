@@ -16,6 +16,7 @@ if(!iOS()){
   window.location.href="https://emotrack.github.io/?first=123";
 }
 
+
 //Link speichern
 let link = "https://www.soscisurvey.de/emotrack2/?q=emotrack&s=";
 
@@ -38,17 +39,10 @@ refer();
 
 //Anleitung anzeigen zum Installieren der APP (dafür wird der Installationsapp mit ?first=123 markiert)
 
-function install() {
+function remove() {
 
   let params = new URLSearchParams(document.location.search.substring(1));
   first = parseInt(params.get("first"), 10);
-  
-  if (first == 123){
-  document.getElementById("ios-prompt").style.display = "block";
-    document.getElementById("eingabefeld").style.display = "none";
-    }
-//Wenn der eingegebene Code nicht in Sosci existiert, dann leitet Sosci mit ?first=666 zurück auf die Seite, wodurch die Eingabe gelöscht wird
-  
   if (first == 666) {
     localStorage.removeItem('serial');
     document.getElementById("eingabefeld").style.display = "block";
@@ -56,7 +50,7 @@ function install() {
   }
 }
 
-install();
+remove();
 
 //Sendet den Code an Sosci
 
@@ -73,7 +67,7 @@ function send(){
 let serial = localStorage.getItem('serial');
 
 
-//Falls ein Code geladen werden kann, wird automatisch zu Sosc weitergeleitet
+//Falls ein Code geladen werden kann, wird automatisch zu Sosci weitergeleitet
 
 if (serial == null){
 if (isNaN(first)){
