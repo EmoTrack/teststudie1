@@ -13,7 +13,7 @@ function iOS() {
 }
 
 if(!iOS()){
-  window.location.href("https://emotrack.github.io/?first=123");
+  window.location.href="https://emotrack.github.io/?first=123";
 }
 
 //Link speichern
