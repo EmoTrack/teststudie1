@@ -12,21 +12,6 @@ function iOS() {
   || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
 }
 
-//Service Worker isntallieren: Code aus dem WWW kopiert --> Macht App installierbar
-
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('/sw.js').then(function(registration) {
-      // Registration was successful
-      console.log('ServiceWorker registration successful with scope: ', registration.scope);
-    }, function(err) {
-      // registration failed :(
-      console.log('ServiceWorker registration failed: ', err);
-    });
-  });
-}
-
-
 //Link speichern
 let link = "https://www.soscisurvey.de/emotrack2/?q=emotrack&s=";
 
@@ -54,10 +39,8 @@ function install() {
   first = parseInt(params.get("first"), 10);
   
   if (first == 123){
-  if (iOS()){document.getElementById("ios-prompt").style.display = "block";}
+  document.getElementById("ios-prompt").style.display = "block";
     document.getElementById("eingabefeld").style.display = "none";
-  if (!iOS()){document.getElementById("firefox-prompt").style.display = "block";}
-  if (!iOS()){document.getElementById("android-prompt").style.display = "block";}
     }
 //Wenn der eingegebene Code nicht in Sosci existiert, dann leitet Sosci mit ?first=666 zurück auf die Seite, wodurch die Eingabe gelöscht wird
   
