@@ -12,9 +12,9 @@ function iOS() {
   || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
 }
 
-if(!iOS()){
-  window.location.href="https://emotrack.github.io/?first=123";
-}
+//if(!iOS()){
+//  window.location.href="https://emotrack.github.io/?first=123";
+//}
 
 
 //Link speichern
