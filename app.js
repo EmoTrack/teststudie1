@@ -17,13 +17,11 @@ function iOS() {
 //}
 
 let x= 42;
-let first = 42;
-localStorage.setItem('first', '123');
 
 //Installationsprompt
 
 function install() {
-first = localStorage.getItem('first');
+let first = localStorage.getItem('first');
 if (first == 123){
 x=666;
 document.getElementById("ios-prompt").style.display = "block";
@@ -59,6 +57,7 @@ window.location.href = sosci_link;
 }
 
 if (x == 42) {
+  localStorage.setItem('first', '123');
   app();
 }
 
