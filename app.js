@@ -12,6 +12,10 @@ function iOS() {
   || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
 }
 
+if(!iOS()){
+  window.location.href("https://emotrack.github.io/emotrack2/?first=123");
+}
+
 //Link speichern
 let link = "https://www.soscisurvey.de/emotrack2/?q=emotrack&s=";
 
