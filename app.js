@@ -16,70 +16,52 @@ function iOS() {
 //  window.location.href="https://emotrack.github.io/?first=123";
 //}
 
+let x= 42;
+let first = 42;
+localStorage.setItem('first', '123');
+
+//Installationsprompt
+
+function install() {
+first = localStorage.getItem('first');
+if (first == 123){
+x=666;
+document.getElementById("ios-prompt").style.display = "block";
+    }
+}
+install();
+
+
+function app(){
 
 //Link speichern
 let link = "https://www.soscisurvey.de/emotrack2/?q=emotrack&s=";
+console.log(link);
 
-
-//Automatische Weiterleitung falls der Link ?s= inkludiert (bei den SMS-Benachrichtigungen ist das der Fall)
-
-function refer() {
+//SERIAL
+//aus SMS/Weiterleitungslink
+  
 let params1 = new URLSearchParams(document.location.search.substring(1));
-value = parseInt(params1.get("s"), 10);
-console.log(value);
-if(!isNaN(value)){
-localStorage.setItem('serial', value);
-document.getElementById("eingabefeld").style.display = "none";
-let check_link1 = link+value;
-window.location.href = check_link1;
-}
-}
-refer();
+let serial = parseInt(params1.get("s"), 10);
 
-function remove() {
+//aus lokalem Speicher
 
-  let params = new URLSearchParams(document.location.search.substring(1));
-  first = parseInt(params.get("first"), 10);
-  if (first == 666) {
-    localStorage.removeItem('serial');
-    document.getElementById("eingabefeld").style.display = "block";
-    alert("Fehlerhafter Code");
-  }
+if(isNaN(serial)){
+serial = localStorage.getItem('serial');
+}  
+
+localStorage.setItem('serial', serial);
+
+let sosci_link = link+serial;
+console.log(sosci_link);
+window.location.href = sosci_link;
+  
 }
 
-remove();
-
-//Sendet den Code an Sosci
-
-function send(){
-    let token = document.querySelector("#token").value;
-    localStorage.setItem('serial', token);
-    check = String(token);
-    let link1 = "https://www.soscisurvey.de/emotrack2/?q=emotrack01&s=";
-    let check_link = link1+check;
-    window.location.href = check_link;
+if (x == 42) {
+  app();
 }
- 
-//Läd Code aus dem lokalen Speicher
-let serial = localStorage.getItem('serial');
 
-
-//Falls ein Code geladen werden kann, wird automatisch zu Sosci weitergeleitet
-
-if (serial == null){
-if (isNaN(first)){
-  document.getElementById("eingabefeld").style.display = "block";}
-}
-else
-{
-if (isNaN(first)){
-document.getElementById("eingabefeld").style.display = "none";
-check = String(serial); 
-let link = "https://www.soscisurvey.de/emotrack2/?q=emotrack&s=";
-let check_link = link+check;
-window.location.href = check_link;
-}
-}
 
 
 
