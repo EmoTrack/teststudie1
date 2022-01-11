@@ -26,6 +26,7 @@ if (isNaN(first)){
 x=666;
 document.getElementById("ios-prompt").style.display = "block";
     }
+localStorage.setItem('first', '123');
 }
 install();
 
@@ -56,8 +57,7 @@ window.location.href = sosci_link;
   
 }
 
-if (x == 42) {
-  localStorage.setItem('first', '123');
+if (first == 123) {
   app();
 }
 
