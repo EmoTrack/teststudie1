@@ -57,9 +57,6 @@ window.location.href = sosci_link;
   
 }
 
-if (first == 123) {
-  app();
-}
 
 
 
