@@ -23,14 +23,14 @@ let x= 42;
 function install() {
 let first = localStorage.getItem('first');
 console.log(first);
-if (isNaN(first)){
+if (first== null){
 x=666;
 document.getElementById("ios-prompt").style.display = "block";
     }
 localStorage.setItem('first', '123');
 }
 install();
-consoloe.log(x);
+console.log(x);
 
 function app(){
 
@@ -58,6 +58,7 @@ window.location.href = sosci_link;
   
 }
 
+if(x==42){app()}
 
 
 
