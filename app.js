@@ -36,9 +36,6 @@ window.location.href = check_link1;
 }
 refer();
 
-
-//Anleitung anzeigen zum Installieren der APP (dafür wird der Installationsapp mit ?first=123 markiert)
-
 function remove() {
 
   let params = new URLSearchParams(document.location.search.substring(1));
