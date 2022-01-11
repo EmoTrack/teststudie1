@@ -1,0 +1,81 @@
+
+body {
+  background-color:#11B3A5;
+  text-align: center;
+  -webkit-user-select: none;
+}
+
+p {
+  font-family: sans-serif;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+a {
+  font-family: sans-serif;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+table {
+text-align: center;
+  margin: auto;
+}
+
+th, td {
+  padding: 15px;
+  border-left:8px solid #FFFFFF;
+  background-color:#11B3A5;
+}
+
+td:hover {border:8px solid #FFFFFF;}
+
+/* Make content area fill the entire browser window */
+html,
+.fullscreen {
+  display: flex;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Center the content in the browser window */
+.container {
+  margin: auto;
+  width: 100%;
+}
+
+#ios-prompt {
+    color: #FFFFFF;
+    text-align: center;
+    display: none;
+    font-size: 20px;
+    border-color: #FFFFFF;
+  border-style: solid;
+      }
+#android-prompt {
+    color: #FFFFFF;
+    text-align: center;
+    display: none;
+    font-size: 20px;
+    border-color: #FFFFFF;
+  border-style: solid;
+      }
+#firefox-prompt {
+    color: #FFFFFF;
+    text-align: center;
+    display: none;
+    font-size: 20px;
+    border-style: solid;
+    border-color: #FFFFFF;
+      }
+#end {
+    display: none;
+      }
+#eingabefeld {
+    display: none;
+      }
+
