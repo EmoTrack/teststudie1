@@ -22,6 +22,7 @@ let x= 42;
 
 function install() {
 let first = localStorage.getItem('first');
+console.log(first);
 if (isNaN(first)){
 x=666;
 document.getElementById("ios-prompt").style.display = "block";
@@ -29,7 +30,7 @@ document.getElementById("ios-prompt").style.display = "block";
 localStorage.setItem('first', '123');
 }
 install();
-
+consoloe.log(x);
 
 function app(){
 
