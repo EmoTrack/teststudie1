@@ -44,14 +44,6 @@ console.log(link);
 let params1 = new URLSearchParams(document.location.search.substring(1));
 let serial = parseInt(params1.get("s"), 10);
 
-//aus lokalem Speicher
-
-if(isNaN(serial)){
-serial = localStorage.getItem('serial');
-}  
-
-localStorage.setItem('serial', serial);
-
 let sosci_link = link+serial;
 console.log(sosci_link);
 window.location.href = sosci_link;
