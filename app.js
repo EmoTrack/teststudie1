@@ -40,9 +40,10 @@ console.log(link);
 
 //SERIAL
 //aus SMS/Weiterleitungslink
-  
-let params1 = new URLSearchParams(document.location.search.substring(1));
-let serial = parseInt(params1.get("s"), 10);
+
+
+let params = new URLSearchParams(document.location.search);
+let serial = parseInt(params.get("s"));
 
 let sosci_link = link+serial;
 console.log(sosci_link);
