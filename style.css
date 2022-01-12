@@ -18,7 +18,8 @@ font-weight:normal;
 border-radius: 1px;
 padding: 0.8em 1em;
 border:0px;
-background: #bfede9;
+text-decoration: none;
+font-family: sans-serif;
 }
 
 button{
@@ -28,7 +29,12 @@ font-weight:normal;
 border-radius: 1px;
 padding: 0.8em 1em;
 border:0px;
+font-family: sans-serif;
+background: none;
+}
+tr{
 background: #bfede9;
+height:40px;
 }
 
 table {
@@ -36,13 +42,6 @@ text-align: center;
   margin: auto;
 }
 
-th, td {
-  padding: 15px;
-  border-left:8px solid #FFFFFF;
-  background-color:#11B3A5;
-}
-
-td:hover {border:8px solid #FFFFFF;}
 
 /* Make content area fill the entire browser window */
 html,
