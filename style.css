@@ -12,26 +12,24 @@ p {
 }
 
 a {
-text-align: center ;
-font-family: sans-serif;
-color: #11B3A5;
-text-decoration: none; 
-font-size: 12px; 
-border-color: #FFFFFF; 
-border-style: solid; 
-border-radius: 4px; 
-font-weight: bold; 
-background-color: #ffffff;
+font-size: 15px;
+color:#666666;
+font-weight:normal;
+border-radius: 1px;
+padding: 0.8em 1em;
+border:0px;
+background: #bfede9;
 }
 
-button
-{font-size: 15px;
- color:#666666;
-  font-weight:normal;
-  border-radius: 1px;
-  padding: 0.8em 1em;
-  border:0px;
-  background: #bfede9;}
+button{
+font-size: 15px;
+color:#666666;
+font-weight:normal;
+border-radius: 1px;
+padding: 0.8em 1em;
+border:0px;
+background: #bfede9;
+}
 
 table {
 text-align: center;
