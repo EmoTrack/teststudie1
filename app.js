@@ -17,6 +17,8 @@ function iOS() {
 //}
 
 let x= 42;
+let params = new URLSearchParams(document.location.search);
+let serial = params.get("s");
 
 //Installationsprompt
 
@@ -40,10 +42,6 @@ console.log(link);
 
 //SERIAL
 //aus SMS/Weiterleitungslink
-
-
-let params = new URLSearchParams(document.location.search);
-let serial = params.get("s");
 
 let sosci_link = link+serial;
 console.log(sosci_link);
