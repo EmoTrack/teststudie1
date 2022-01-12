@@ -43,7 +43,7 @@ console.log(link);
 
 
 let params = new URLSearchParams(document.location.search);
-let serial = parseInt(params.get("s"));
+let serial = params.get("s");
 
 let sosci_link = link+serial;
 console.log(sosci_link);
