@@ -28,6 +28,7 @@ console.log(first);
 if (first== null){
 x=666;
 document.getElementById("ios-prompt").style.display = "block";
+document.getElementById("help").style.display = "block";
     }
 localStorage.setItem('first', '123');
 }
