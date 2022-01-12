@@ -68,3 +68,7 @@ html,
     border-color: #FFFFFF;
   border-style: solid;
       }
+
+#help {
+    display: none;
+      }
