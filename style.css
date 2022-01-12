@@ -21,8 +21,17 @@ border-color: #FFFFFF;
 border-style: solid; 
 border-radius: 4px; 
 font-weight: bold; 
-background-color: #ffffff"
+background-color: #ffffff;
 }
+
+button
+{font-size: 15px;
+ color:#666666;
+  font-weight:normal;
+  border-radius: 1px;
+  padding: 0.8em 1em;
+  border:0px;
+  background: #bfede9;}
 
 table {
 text-align: center;
