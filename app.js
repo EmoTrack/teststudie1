@@ -58,7 +58,3 @@ window.location.href = sosci_link;
 
 if(x==42){app();}
 
-function done(){
-  app();}
-
-
