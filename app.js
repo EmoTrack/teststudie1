@@ -1,22 +1,3 @@
-function start(){
-
-let params = new URLSearchParams(document.location.search);
-let first = params.get("first");
-let serial = params.get("s")
-let link = "emotrack.github.io/emotrack2/?s=";
-  
-y = 123;
-  
-localStorage.setItem('y', y);
-  
-let sosci_link = link+serial;
-console.log(sosci_link);
-//window.location.href = sosci_link;
-
-}
-
-
-
 function iOS() {
   return [
     'iPad Simulator',
