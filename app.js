@@ -44,7 +44,7 @@ console.log(link);
 
 let sosci_link = link+serial;
 console.log(sosci_link);
-window.location.href = sosci_link;
+//window.location.href = sosci_link;
   
 }
 
