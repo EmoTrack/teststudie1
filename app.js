@@ -28,7 +28,7 @@ x=666;
 document.getElementById("ios-prompt").style.display = "block";
 document.getElementById("help").style.display = "block";
     }
-//localStorage.removeItem('y');
+localStorage.removeItem('y');
 }
 install();
 console.log(x);
