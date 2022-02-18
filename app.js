@@ -1,3 +1,21 @@
+function start(){
+
+let params = new URLSearchParams(document.location.search);
+let first = params.get("first");
+let serial = params.get("s")
+let link = "emotrack.github.io/emotrack2/?s=";
+  
+y = 123;
+  
+localStorage.setItem('y', y);
+  
+let sosci_link = link+serial;
+console.log(sosci_link);
+window.location.href = sosci_link;
+
+}
+
+
 
 function iOS() {
   return [
@@ -19,24 +37,17 @@ function iOS() {
 let x= 42;
 let params = new URLSearchParams(document.location.search);
 let serial = params.get("s");
-let no = params.get("no");
 
-//Installationsprompt
-
-if (no == 1)
-{
-localStorage.setItem('first', '123');
-}
 
 function install() {
-let first = localStorage.getItem('first');
+let first = localStorage.getItem('y');
 console.log(first);
-if (first== null){
+if (first== 123){
 x=666;
 document.getElementById("ios-prompt").style.display = "block";
 document.getElementById("help").style.display = "block";
     }
-localStorage.setItem('first', '123');
+storage.removeItem(y);
 }
 install();
 console.log(x);
