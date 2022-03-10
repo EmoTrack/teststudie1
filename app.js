@@ -36,7 +36,7 @@ console.log(x);
 function app(){
 
 //Link speichern
-let link = "https://s2survey.net/gefuehlsstudie/?q=emotrack&s=";
+let link = "https://soscisurvey.de/EmoWebstudie/?q=emotrack&s=";
 console.log(link);
 
 //SERIAL
