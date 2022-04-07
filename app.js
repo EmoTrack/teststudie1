@@ -29,6 +29,7 @@ document.getElementById("ios-prompt").style.display = "block";
 document.getElementById("help").style.display = "block";
     }
 localStorage.removeItem('y');
+localStorage.clear(); 
 }
 install();
 console.log(x);
@@ -45,7 +46,7 @@ console.log(link);
 let sosci_link = link+serial;
 console.log(sosci_link);
 window.location.href = sosci_link;
-  
+
 }
 
 if(x==42){app();}
